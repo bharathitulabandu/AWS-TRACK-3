@@ -9,6 +9,7 @@ vpc_security_group_ids = [aws_security_group.webserverSG.id]
             #!/bin/bash
             yum install httpd
             service start httpd
+            cd /var/www/html
             echo " hello world " > index.html
             EOF
 }
